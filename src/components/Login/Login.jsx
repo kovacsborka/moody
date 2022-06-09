@@ -30,21 +30,24 @@ export default function Login({ setToken }) {
   }
 
   return(
-    <div className="login-wrapper">
-      <h1>Please Log In</h1>
-      <form onSubmit={handleSubmit}>
-        <label>
-          <p>Username</p>
-          <input type="text" onChange={e => setUserName(e.target.value)}/>
-        </label>
-        <label>
-          <p>Password</p>
-          <input type="password" onChange={e => setPassword(e.target.value)}/>
-        </label>
-        <div>
-          <button type="submit">Submit</button>
-        </div>
-      </form>
+    <div className="login-body">
+      <h1 className='login-title'>Moody</h1>
+      <h3 className='login-subtitle'>az egészségügyi naplód</h3>
+      <div className='login-wrapper'>
+        <h1>Bejelentkezés</h1>
+        <form onSubmit={handleSubmit}>
+          <label>
+            <input type="text" placeholder="felhasználónév" onChange={e => setUserName(e.target.value)}/>
+          </label>
+          <label>
+            
+            <input type="password" placeholder="jelszó" onChange={e => setPassword(e.target.value)}/>
+          </label>
+          <div>
+            <button type="submit">Submit</button>
+          </div>
+        </form>
+      </div>  
     </div>
   )
 }
