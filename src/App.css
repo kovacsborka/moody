@@ -31,6 +31,13 @@ select {
   border-radius: 0;
 }
 
+
+/*css reset*/
+
+body {
+  font-family: 'Montserrat';
+}
+
 .wrapper {
   padding: 20px;
 }
